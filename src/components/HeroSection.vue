@@ -3,7 +3,7 @@ import { ref, onMounted } from "vue"
 
 const titles = [
   "Full-Stack Web Developer",
-  "Vue & React Specialist",
+  "Vue Specialist",
   "Laravel & Node.js Expert",
   "Cloud & API Integrator"
 ]
@@ -62,7 +62,7 @@ onMounted(() => {
   >
     <!-- Background gradient animation -->
     <div
-      class="absolute inset-0 bg-gradient-to-r from-cyan-900 via-gray-900 to-blue-900 opacity-70 animate-gradient-x"
+      class="  bg-gradient-to-r from-cyan-900 via-gray-900 to-blue-900 opacity-70 animate-gradient-x"
     ></div>
 
     <!-- Glow circles -->
@@ -95,19 +95,5 @@ onMounted(() => {
 </template>
 
 <style scoped>
-@keyframes gradient-x {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-.animate-gradient-x {
-  background-size: 200% 200%;
-  animation: gradient-x 10s ease infinite;
-}
+
 </style>
