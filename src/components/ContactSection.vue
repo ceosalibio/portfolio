@@ -110,7 +110,7 @@ try {
                flex flex-col items-center justify-center text-gray-300 transition
                hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50 hover:text-white
                shadow-lg hover:shadow-xl cursor-pointer"
-        @click.prevent="c.isEmail ? (showModal = true) : null"
+        @click="c.isEmail ? (showModal = true, $event.preventDefault()) : null"
       >
         <div
           class="w-16 h-16 rounded-full flex items-center justify-center mb-3 bg-gradient-to-r from-cyan-400 to-blue-500 shadow-lg transition group-hover:shadow-cyan-400/60"
